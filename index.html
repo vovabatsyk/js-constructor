@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Опитування</title>
+</head>
+    <body>
+        <h1>Опитування</h1>
+        <form method="POST" action="https://formspree.io/vovabatsyk@gmail.com">
+        <label for="client-name">Ім'я</label>
+        <input type="text" name="client-name"
+          id="client-name"
+          placeholder="Ваше ім'я"
+           required>
+        <br>
+        <label>Електронна адреса
+            <input type="email" name="client-email"
+            placeholder="Ваша електронна адреса"
+             required>
+        </label>
+        <br>
+        <label>Стать:</label>
+        <label>
+            <input type="radio" name="client-gender">
+            Чол
+        </label>
+        <label>
+            <input type="radio" name="client-gender">
+            Жін
+        </label>
+        <label>
+            <input type="radio" name="client-gender">
+            Інше
+        </label>
+        <br>
+        <h2>Питання</h2>
+            <ol>
+            <li> 
+               <label>Були ви за кордоном?</label>
+               <label>
+                <input type="radio" name="question01">
+                Так
+                </label>
+                <label>
+                <input type="radio" name="question01">
+                Ні
+                </label>
+            </li>
+            <li> 
+                <label>Важаєте себе патріотом?</label>
+                <label>
+                <input type="radio" name="question02">
+                Так
+                </label>
+                <label>
+                <input type="radio" name="question02">
+                Ні
+                </label> 
+            </li>
+            <li>
+                <label>Ви відчули покращення медичних послуг?</label>
+                <label>
+                <input type="radio" name="question03">
+                Так
+                </label>
+                <label>
+                <input type="radio" name="question03">
+                Ні
+                </label>
+            </li>
+            <li>
+                <label>Донбас це ?</label>
+                <label>
+                <input type="radio" name="question04">
+                Ураїна
+                </label>
+                <label>
+                <input type="radio" name="question04">
+                Росія
+                </label>
+            </li>
+            <li>
+                <label>Ваша націотальніст?
+                <input type="text" name="question05"
+                placeholder="відповідь"
+                required>
+                </label>
+            </li>
+            <li>
+                <label>В якій області ви живете?
+                <input type="text" name="question06"
+                placeholder="відповідь"
+                required>
+                </label>
+            </li>
+             <li>
+                <label>Хто є найбільшим ворогом для України?
+                <input type="text" name="question07"
+                placeholder="відповідь"
+                required>
+                </label>
+            </li>
+            <li>
+                <label>Як звати президента США?
+                <input type="text" name="question08"
+                placeholder="відповідь"
+                required>
+                </label>
+            </li>
+            <li>
+                <label> Мером Львова є?
+                <select name="question09" size="1">
+                <option selected="selected" value="Poroshenko">Порошенко</option>
+                <option value="Sadovui">Садовий</option>
+                <option value="Groysman">Гройсман</option>
+                <option value="Tumoshenk">Тимошенко</option>
+                </select>
+                </label>
+            </li>
+        </ol>
+                <input type="submit" value="Відправити!!!">
+                <input type="reset" value="Відмінити">
+        </form>
+        <br>
+        <a href="table.html">До таблиці</a>
+    </body>
+</html>
